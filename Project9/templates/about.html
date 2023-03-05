@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iris Flower Detector</title>
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg mb-4 bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Iris Fower Detector</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about/">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-dark mx-2" type="submit">Search</button>
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">DataSet</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label=""><img src="/static/cross.jpg" alt="" style="width: 15px;"></button>
+      </div>
+      <div class="modal-body">
+        Iris.csv is the dataset of iris. You can download it by clicking on download
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light btn-sm" data-bs-dismiss="modal">Close</button>
+        <a href="/static/iris.csv"><button type="button" class="btn btn-light btn-sm" data-bs-dismiss="modal">Download</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="alert alert-dark alert-dismissible fade show" role="alert">
+        <strong class="mr-4">Iris Flower Detector!</strong> This is a website which can detect iris flower.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div class="container card" style="width: 18rem;">
+        <img src="/static/flower.jpg" class="card-img-top" alt="Iris Flower">
+        <div class="card-body">
+          <p class="card-text">Iris is a very popular flower which is used in machine Learning and Data Science.</p>
+        </div>
+      </div><hr>
+
+      <div class="container">
+        <p class="text-dark">The Iris flower data set or Fisher's Iris data set is a multivariate data set used and made famous by the British statistician and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. It is sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. Two of the three species were collected in the Gaspé Peninsula "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus"  The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. Fisher's paper was published in the Annals of Eugenics and includes discussion of the contained techniques' applications to the field of phrenology.</p>
+      </div>
+
+      <hr>
+      <div class="container">
+        <h1>How to use it</h1>
+        <ol>
+          <b><li>Go To home first</li></b>
+          <b><li>Enter the sepal length</li></b>
+          <b><li>Enter the sepal width</li></b>
+          <b><li>Enter the petal length</li></b>
+          <b><li>Enter the petal width</li></b>
+        </ol>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
